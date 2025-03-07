@@ -1,0 +1,60 @@
+#include <stdio.h>
+int main(){
+    /*Write a program that calculates the average marks obtained by a student in three different subjects;
+    Physics, Mathematics, Chemistry. Assume for each subject, four different tests were conducted, ie Assignment, 
+    Coursework, Mid-term and Enf-of-term examinations.*/
+    int Phy_as, Phy_cw, Phy_MOT, Phy_EOT;
+    printf("Enter your Physics marks appropriately.\n");
+    printf("Assignment:");
+    scanf("%d", &Phy_as);
+
+    printf("Course-work:");
+    scanf("%d", &Phy_cw);
+
+    printf("Mid-Term:");
+    scanf("%d", &Phy_MOT);
+
+    printf("End of Term:"); 
+    scanf("%d", &Phy_EOT);
+
+    int average_P = (Phy_as+Phy_cw+Phy_MOT+Phy_EOT)/ 4 ;
+    printf("Average = %d.",average_P);
+
+    int Chem_as, Chem_cw, Chem_MOT, Chem_EOT;
+    printf("\n\nEnter your Chemistry marks appropriately.\n");
+    printf("Assignment:");
+    scanf("%d", &Chem_as);
+
+    printf("Course-work:");
+    scanf("%d", &Chem_cw);
+
+    printf("Mid-Term:");
+    scanf("%d", &Chem_MOT);
+
+    printf("End of Term:");
+    scanf("%d", &Chem_EOT);
+
+    int average_C = (Chem_as+Chem_cw+Chem_MOT+Chem_EOT)/ 4 ;
+    printf("Average = %d.",average_C);
+
+    int Math_as, Math_cw, Math_MOT, Math_EOT;
+    printf("\n\nEnter your Mathematics marks appropriately.\n");
+    printf("Assignment:");
+    scanf("%d", &Math_as);
+
+    printf("Course-work:");
+    scanf("%d", &Math_cw);
+
+    printf("Mid-Term:");
+    scanf("%d", &Math_MOT);
+
+    printf("End of Term:");
+    scanf("%d", &Math_EOT);
+
+    int average_M = (Math_as+Math_cw+Math_MOT+Math_EOT)/ 4 ;
+    printf("Average = %d.",average_M);
+    
+    int Total_Average = (average_P + average_M + average_C)/3;
+    printf("\n\nTOTAL AVERAGE: %d", Total_Average);
+    return 0;
+}
